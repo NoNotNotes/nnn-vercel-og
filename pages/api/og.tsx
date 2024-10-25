@@ -71,13 +71,13 @@ export default function handler(request: NextRequest) {
 
         <div
             style={{
-            width: '750',
+            width: '1100',
             display: 'flex',
             alignItems: 'flex-start',
             justifyContent: 'space-between',
             position: 'absolute',
-            top: 25,
-            left: 25,
+            top: 50,
+            left: 50,
             }}
         >
             
@@ -85,39 +85,30 @@ export default function handler(request: NextRequest) {
             style={{
                 margin: 0,
                 marginTop: 5,
-                width: '700',
+                width: '1000',
                 overflow: 'hidden',
                 alignItems: 'center',
                 display: 'block',
                 lineClamp: '1 "..."',
                 fontFamily: '"Poppins"',
-                fontSize: 36,
+                fontSize: 64,
             }}
             >
                     {title}
             </h4>
-            <div
-            style={{
-                margin: "0",
-                fontWeight: '200',
-                width: '50',
-                display: 'flex',
-            }}
-            >
-                    <img
-                      alt="Logo"
-                      height={50}
-                      width={50}
-                      style={{borderRadius: '10',}}
-                      src="https://nonotnotes.com/static/icon.png"
-                    />
-            </div>
+            <img
+              alt="Logo"
+              height={75}
+              width={75}
+              style={{borderRadius: '10',}}
+              src="https://nonotnotes.com/static/icon.png"
+            />
         </div>
         <ol style={{
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'flex-end',
-            fontSize: '24',
+            fontSize: '36',
             fontWeight: '800',
             fontFamily: '"SS4Bold"',
             color: '#ffd08f',
@@ -126,8 +117,8 @@ export default function handler(request: NextRequest) {
             paddingLeft: '0',
             listStyle: 'none',
             position: 'absolute',
-            left: '25',
-            bottom: '5',
+            left: '45',
+            bottom: '15',
         }}
         >
             { tags.map((tag, index) => (
@@ -135,9 +126,9 @@ export default function handler(request: NextRequest) {
                 key={index}
                 style={{
                   backgroundColor: '#302c2c',
-                  borderRadius: '8px',
-                  margin: '0 .1rem',
-                  padding: '.2rem .4rem',
+                  borderRadius: '18px',
+                  margin: '0 .3rem',
+                  padding: '.3rem .6rem',
                 }}
               >
                 { tag }
@@ -147,33 +138,33 @@ export default function handler(request: NextRequest) {
         <h6
             style={{
                 margin: 0,
-                lineHeight: '40px',
+                lineHeight: '60px',
                 alignItems: 'center',
                 display: 'block',
                 position: 'absolute',
-                bottom: 20,
-                right: 25,
+                bottom: 30,
+                right: 50,
                 fontFamily: '"Barlow"',
-                color: "#ffffff80",
+                color: "#ffffffcc",
                 fontStyle: '',
-                fontSize: '25',
+                fontSize: '42',
             }}
         >
             <span>{dateMonthDay}</span>
-            <hr style={{width: `10`, padding: 0, margin: '0.2em', backgroundColor: '#ffffff80'}}/>
+            <hr style={{width: `20`, padding: 0, margin: '0.3em', backgroundColor: '#ffffff80'}}/>
             <span>{dateYear}</span>
         </h6>
-        <hr style={{width: `5`, height: 250, padding: 0, margin: '0', backgroundColor: '#393639cc', position: 'absolute', left: 25, top: 82}}/>
+        <hr style={{width: `10`, height: 360, padding: 0, margin: '0', backgroundColor: '#393639cc', position: 'absolute', left: 50, top: 152}}/>
         <p style={{
           display: 'block',
           fontFamily: 'SS4',
-          fontSize: '30',
+          fontSize: '48',
           position: 'absolute',
-          top: 50,
-          height: 325,
-          width: 800,
-          paddingLeft: 50,
-          paddingRight: 50,
+          top: 116,
+          height: 500,
+          width: 1200,
+          paddingLeft: 90,
+          paddingRight: 75,
           maskImage: 'linear-gradient(to bottom, #000000ff 70%, #00000000 100%)',
           color: '#ebe7d7',
           textAlign: 'left',
@@ -186,8 +177,8 @@ export default function handler(request: NextRequest) {
     </div>
       ),
       {
-        width: 800,
-        height: 400,
+        width: 1200,
+        height: 630,
         fonts: [
           {
             name: 'Poppins',
